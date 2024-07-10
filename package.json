@@ -122,3 +122,301 @@
 
 
 </html>
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  html, body {
+    height:100%;
+  }
+  /* Set base font styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+  }
+
+
+
+
+  /*  Navigation Bar */
+  .nav1 {
+    
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #b4ccda;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.0;
+
+    position: fixed;  top: 0; width: 100% ;/* Fix the navbar to the top of the page */
+    z-index: 1000; /* Fix the navbar to the top of the page */
+
+    margin-left: 0%;
+  }
+  
+  .nav1 ul {
+    list-style-type: none; 
+    display: flex;
+    width: 300px;
+  }
+  
+  .nav1 ul li {
+    display: inline-block; 
+    margin-right: 20px; 
+    position: relative;
+   width: 100px;
+   height: 70px;
+   list-style: none;
+  }
+  
+ 
+  .nav1 ul li a {
+    text-decoration: none;
+    color: #232121; 
+    font-size: 16px; 
+    font-weight: bold; 
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500
+  }
+  
+  
+  .nav1 ul li a:hover {
+    color: #000000; 
+  }
+
+  .nav1 ul li a .icon{
+
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    color:#ffffff ;
+    transition: .5s;
+  }
+
+  .nav1 ul li:hover a .icon{
+    transform: translateY(-32px);
+  }
+
+  .nav1 ul li a .text {
+  position: absolute;
+  color: #000000;
+  font-weight: 400;
+  font-size: .75em;
+  letter-spacing: .05em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .5s, transform .5s;
+}
+
+.nav1 ul li a:hover .text {
+  opacity: .7;
+  transform: translateY(0);
+}
+
+
+
+
+/* Style the logo */
+.logo {
+  max-width: 100px; /* Limit the maximum width of the logo */
+  margin-left: 0px; /* Add some left margin to the logo */
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  /*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+  position: relative;
+  padding: 0 0%;
+  display:flexbox;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+  
+
+/*Style for the seafood and Explore*/
+
+.content{
+  text-align:center ;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.content h1{
+  font-size: 160px;
+  color: #ffffff;
+  font-weight:600;
+  transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 630px){
+  .content h1{
+    font-size: 80px;
+  }
+
+}
+  
+
+.content h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 24px;
+  border: 2px solid #605757;
+  padding: 14px 70px;
+  border-radius: 10px; 
+  margin-top: 20px;
+  
+}
+
+
+/* Hover effect for explore-link class */
+.explore-link:hover {
+  background-color: #a0c5d5; /* Darken background color on hover */
+  color: #fff; /* Change text color to white on hover */
+  border-color: white;
+  color: #142c48;
+
+  
+}
+/*Back video*/
+
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+  min-width: 100%;
+  overflow: hidden;
+  z-index:-1;
+  width: 40%;
+  margin-bottom: 1%
+
+}
+
+
+@media (min-aspect-ratio:16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+  
+
+  /* Footer Styling */
+  .footerContainer {
+    background-color: #131212;
+    padding: 0px 0;
+    text-align: center;
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  
+  footer p {
+    color: #333;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-social a{
+    text-decoration: none;
+    padding: 10px;
+    background:white;
+    margin: 10px;
+    border-radius:60% ;
+
+  }
+
+  .footer-social a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+
+  }
+
+
+  .footer-social a:hover{
+    color: #111;
+    transition: 0.5s;
+  }
+  
+  .footer-social a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footer-info{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  .footer-info p{
+    color: white;
+    font-size: 0.6rem;
+    opacity: 1.9;
+    margin: 0px 5px;
+    letter-spacing: 0.5px;
+    font-weight:400 ;
+    
+  }
+
+  /*p {
+    color: #000000;
+    font-size: 1rem;
+  }
+*/
+
+    
+
+
+.container2{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2rem 6rem;
+background-color: #ffffff;
+margin-top: 0;
+height: 100vh;
+
+}
+
+
+
