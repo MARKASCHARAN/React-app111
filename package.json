@@ -1,39 +1,124 @@
-{
-  "name": "reactapp1",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
-}
+
+     <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" src="Images/NLKlogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLK Sea Foods</title>
+  <link rel="shortcut icon" type="image/x-icon" href="NLKlogo.png">
+  <link rel="stylesheet" href="hello.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div>
+    <nav class="nav1" >
+
+      <img src="NLKlogo.png" alt="NLK Sea Foods logo" class="logo"> 
+  
+  
+  
+      <ul>
+        <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+              <span class="text">Home</span>
+              <span ></span>
+          </a>
+        </li>
+  
+        <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="fish-outline"></ion-icon></span>
+              <span class="text">Grown</span>
+              <span></span>
+          </a>
+      </li>
+  
+      <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="keypad-outline"></ion-icon></span>
+              <span class="text">Types</span>
+              <span></span>
+          </a>
+      </li>
+  
+      <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+              <span class="text" >About Us</span>
+              <span></span>
+          </a>
+      </li>
+  
+      <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="laptop-outline"></ion-icon></span>
+              <span class="text"  > Contact </span>
+              <span></span>
+          </a>
+     </li>
+    
+  
+  </ul>
+  </nav>
+  </div>
+
+  
+ 
+  <div class="container">
+
+  <video autoplay loop muted plays-inline class="back-video"
+    <source src="189393-885804319.mp4"  type="video/mp4">
+  </video>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+  <div class="content">
+    <h1>Seafood</h1>
+    <a href="#" class="explore-link">Explore</a>
+  </div>
+</div>
+
+<div class="container2">
+
+
+
+</div>
+ 
+
+<div class="footerContainer"> 
+  
+  <footer class="" >
+
+
+    <div class="footer-social">
+       
+     <a href=""><i class="fab fa-facebook"></i></a>
+     <a href=""><i class="fab fa-twitter"></i></a>
+     <a href=""><i class="fab fa-instagram"></i></a>
+     <a href=""><i class="fab fa-linkedin-in"></i></a>
+       
+    </div>
+ 
+  
+   <div class="footer-info">
+     <p>&copy; 2024 NLK Sea Foods. All rights reserved.</p>
+     <p>Designed by <a href=https://www.linkedin.com/feed/ target="_blank">MS CHARAN</a></p>
+   </div>
+ 
+   </footer>
+
+  </div>
+</body>
+
+
+
+</html>
